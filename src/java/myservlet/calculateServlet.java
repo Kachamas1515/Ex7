@@ -53,10 +53,7 @@ public class calculateServlet extends HttpServlet {
         else if(num1Str != null && num2Str != null && button.equals("Div") )
 	{
             double result = num1 / num2;
-            if(result > 0){
-            request.setAttribute("result", result);
-            }
-            
+            request.setAttribute("result", result);            
         }
         request.getRequestDispatcher("result.jsp").forward(request, response);        
     }
